@@ -218,20 +218,20 @@ WheelJoint2D:
   m_GameObject: {fileID: 240917712}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 240917716}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.25657606, y: 0.21381402}
+  m_ConnectedAnchor: {x: -6.5763803, y: 1.6934227}
   m_Suspension:
     m_DampingRatio: 0.7
     m_Frequency: 2
     m_Angle: 90
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 0
+    m_MotorSpeed: 1
     m_MaximumMotorForce: 10000
 --- !u!50 &240917716
 Rigidbody2D:
