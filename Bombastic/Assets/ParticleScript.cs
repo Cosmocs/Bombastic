@@ -13,14 +13,17 @@ public class ParticleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.tag == "Metal Box")
-            {
-                ParticleSystem ps = GetComponent<ParticleSystem>();
-                ps.Play();
-            }
+        
+    }
 
-            }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "redball (1)")
+        {
+            ParticleSystem ps = GetComponent<ParticleSystem>();
+            ps.Play();
         }
+
+        print("hit");
+    }
 }
