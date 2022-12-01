@@ -39,7 +39,7 @@ public class cameraFollow : MonoBehaviour
         //check if the player has moved the half of the camera width
         //if yes, change the PreviousPan variable to the new location.
         //if not, make the camera stay. 
-        if (Mathf.Abs(previousPan.x - player.transform.position.x) > halfWidth)
+        if (Mathf.Abs(previousPan.x - player.transform.position.x) > halfWidth/6.0)
         {
             previousPan = transform.position;
         }
